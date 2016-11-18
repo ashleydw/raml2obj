@@ -115,8 +115,8 @@ function _makeExamplesConsistent(arr) {
       }
 
       obj.examples.push(obj.structuredExample.value);
-      delete obj.example;
-      delete obj.structuredExample;
+      //delete obj.example;
+      //delete obj.structuredExample;
     }
 
     return obj;
@@ -216,7 +216,7 @@ function _enhanceRamlObj(ramlObj) {
   // we get the full graph.
   // Delete the types from the ramlObj so it's not processed again later on.
   const types = _expandRootTypes(ramlObj.types);
-  delete ramlObj.types;
+  //delete ramlObj.types;
 
   // Other structures (like `responses`) are an object that hold other wrapped objects.
   // Flatten this to simple (non-wrapped) objects in an array instead,
