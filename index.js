@@ -115,8 +115,8 @@ function _makeExamplesConsistent(arr) {
       }
 
       obj.examples.push(obj.structuredExample.value);
-      //delete obj.example;
-      //delete obj.structuredExample;
+      delete obj.example;
+      delete obj.structuredExample;
     }
 
     return obj;
