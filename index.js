@@ -281,10 +281,10 @@ function _sourceToRamlObj(source) {
 module.exports.parse = function (source) {
   return _sourceToRamlObj(source).then(ramlObj => _enhanceRamlObj(ramlObj)).then(function(ret) {
     // delete non-top level types
-    Object.keys(ret.types).forEach((key) => {
-      if(key.indexOf('.') > 0)
-        delete ret.types[key];
-    });
+    //Object.keys(ret.types).forEach((key) => {
+    //  if(key.indexOf('.') > 0)
+    //    delete ret.types[key];
+    //});
     return ret;
   });
 };
